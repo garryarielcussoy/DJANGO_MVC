@@ -8,31 +8,16 @@
 <div class="container-fluid">
         <div class="row mentor-page">
             <div class="col-12 our-mentor">Our Mentor</div>
-            <div class="col-4 img-box">
-                <img class="mentor-img" src="../../static/img/andreas.png">
-            </div>
-            <div class="col-8">
-                <h4>Andreas Nugroho</h4>
-                <h6>Software Ninja (5 years experience)</h6>
-                "Great place to learn about programming. Come join us!"
-            </div>
-
-            <div class="col-4 img-box">
-                <img class="mentor-img" src="../../static/img/ramdhan.png">
-            </div>
-            <div class="col-8">
-                <h4>Ramdhan Hidayat</h4>
-                <h6>Master of Chaos (10 years experience)</h6>
-                "We make this program with passion, hard work, and heart. Let's get rock with us!"
-            </div>
-
-            <div class="col-4 img-box">
-                <img class="mentor-img" src="../../static/img/trimo.png">
-            </div>
-            <div class="col-8">
-                <h4>Trimo Leksono</h4>
-                <h6>Magician (8 Years Experience)</h6>
-                "The best place for who want to be a great IT talent."
+            {% for mentor in mentors %}
+                <div class="col-4 img-box">
+                    <img class="mentor-img" src="{{mentor.foto}}">
+                </div>
+                <div class="col-8">
+                    <h4>{{mentor.nama_lengkap}}</h4>
+                    <h6>{{mentor.pengalaman}}</h6>
+                    "{{mentor.testimoni}}"
+                </div>
+            {% endfor %}
             </div>
         </div>
     </div>

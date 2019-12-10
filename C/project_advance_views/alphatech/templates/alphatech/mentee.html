@@ -8,35 +8,17 @@
 <div class="container-fluid">
         <div class="row mentee-page">
             <div class="col-12 our-mentee">Our Mentee</div>
-            <div class="col-2"></div>
-            <div class="col-4">
-                <img class="mentee-img" src="../../static/img/jobs.png">
-            </div>
-            <div class="col-4">
-                <h4>Steve Jobs</h4>
-                "I learn so much from Alpha Tech."
-            </div>
-            <div class="col-2"></div>
-
-            <div class="col-2"></div>
-            <div class="col-4">
-                <img class="mentee-img" src="../../static/img/page.png">
-            </div>
-            <div class="col-4">
-                <h4>Larry Page</h4>
-                "Great place to learn about programming"
-            </div>
-            <div class="col-2"></div>
-
-            <div class="col-2"></div>
-            <div class="col-4">
-                <img class="mentee-img" src="../../static/img/mark.png">
-            </div>
-            <div class="col-5">
-                <h4>Mark Zukckerburg</h4>
-                "The best place for who want to be a great IT talent."
-            </div>
-            <div class="col-1"></div>
+            {% for mentee in mentees %}
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <img class="mentee-img" src="{{mentee.foto}}">
+                </div>
+                <div class="col-4">
+                    <h4>{{mentee.nama_lengkap}}</h4>
+                    "{{mentee.testimoni}}"
+                </div>
+                <div class="col-2"></div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

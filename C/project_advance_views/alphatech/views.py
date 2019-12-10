@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Blog, Mentee, Mentor
 
 # Create your views here.
 
@@ -13,11 +14,17 @@ def blog(request):
 
 # Mentor Page
 def mentor(request):
-    return render(request, 'alphatech/mentor.html', {})
+    sent = {
+        'mentors' : Mentor.objects.all()
+    }
+    return render(request, 'alphatech/mentor.html', sent)
 
 # Mentee Page
 def mentee(request):
-    return render(request, 'alphatech/mentee.html', {})
+    sent = {
+        'mentees' : Mentee.objects.all()
+    }
+    return render(request, 'alphatech/mentee.html', sent)
 
 # Author Page
 def author(request):
