@@ -1,6 +1,7 @@
 /*-------------------- GENERAL -------------------- */
 *{
     cursor: default;
+    font-family: sans-serif;
 }
 
 /*-------------------- MENU -------------------- */
@@ -14,6 +15,20 @@ header .header{
 header nav ul li{
     display: inline-block;
     padding: 0 2%;
+}
+
+header nav ul li a{
+    color: black;
+}
+
+header nav ul li a:hover{
+    color: #2ec6ce;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav ul li .active-page{
+    color: #2ec6ce;
 }
 
 .description{
@@ -123,3 +138,38 @@ header nav ul li{
 .home .img-learn img{
     display: inline-block;
 }
+
+/*-------------------- BLOG -------------------- */
+.blog .content-field{
+    text-align: center;
+    margin: 0 0 10% 0;
+}
+
+.blog .blog-post{
+    display: inline-block;
+    margin: 3% 0 1% 0;
+}
+
+.blog .blog-img-2{
+    width: 75%;
+    height: 75%;
+}
+
+.blog .blog-article-title{
+    text-align: left;
+}
+
+.blog .blog-article{
+    text-align: left;
+}
+
+.blog .baca-selengkapnya{
+    color: blue;
+}
+
+.blog .baca-selengkapnya:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+/*-------------------- MENTEE -------------------- */
