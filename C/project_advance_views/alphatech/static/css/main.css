@@ -146,9 +146,8 @@ header nav ul li .active-page{
     margin: 3% 0 1% 0;
 }
 
-.blog-img-2{
-    width: 75%;
-    height: 75%;
+.blog-img{
+    width: 100%;
 }
 
 .blog-article-title{
@@ -221,4 +220,17 @@ h6{
 
 .gmaps{
     width: 100%;
+}
+
+/*-------------------- FORM -------------------- */
+form{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 1.2em;
+}
+
+form .input-box{
+    width: 50%;
+    margin: 1% 0;
 }

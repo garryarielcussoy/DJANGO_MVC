@@ -6,22 +6,18 @@
 <!-- Blog Post -->
 <div class="container-fluid">
     <div class="row content-field">
+    {% for blog in blogs %}
         <div class="col-2"></div>
         <div class="col-8 blog-post">
             {% load static %}
-            <img class="blog-img-1" src="{% static 'img/kendala-sepulsa.jpg' %}">
+            <img class="blog-img" src="{{blog.foto}}">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">September 25, 2018</div>
-                    <div class="col-6">0 Comment</div>
-                    <h3 class="blog-article-title">Punya Kendala? Segera Hubungi Customer Service Sepulsa!</h3>
+                    <div class="col-6">{{blog.waktu_publikasi}}</div>
+                    <div class="col-6">{{blog.jumlah_komentar}} Comment</div>
+                    <h3 class="blog-article-title">{{blog.judul_post}}</h3>
                     <p class="blog-article">
-                        Bagi Sepulsa, kepuasan pelanggan adalah yang utama. Kami senantiasa
-                        mendengarkan keluhan maupun kendala yang kamu hadapi selama melakukan
-                        transaksi di Sepulsa.Umumnya, pelanggan menghadapi kendala sebagai berikut:
-                        Status Order Pending Jika transaksi pembayaran sudah selesai, namun status
-                        order kamu masih pending dalam jangka waktu 15 menit, segera hubungi tim Customer
-                        Service kami dengan menyertakan email ...
+                        {{blog.konten}}
                     </p>
                     <p>
                         <a class="baca-selengkapnya">Baca Selengkapnya</a>
@@ -29,7 +25,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2"></div>   
+    {% endfor %}    
     </div>
 </div>
 {% endblock %}

@@ -1,5 +1,6 @@
+from datetime import date
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Blog, Mentee, Mentor
 
 # Create your views here.
@@ -10,7 +11,10 @@ def index(request):
 
 # Blog Page
 def blog(request):
-    return render(request, 'alphatech/blog.html', {})
+    sent = {
+        'blogs' : Blog.objects.all()
+    }
+    return render(request, 'alphatech/blog.html', sent)
 
 # Mentor Page
 def mentor(request):
@@ -29,3 +33,13 @@ def mentee(request):
 # Author Page
 def author(request):
     return render(request, 'alphatech/author.html', {})
+
+# Forms Page
+def forms(request):
+    return render(request, 'alphatech/forms.html', {})
+
+# After Submit
+def submit_form(request):
+    new_content = Blog(foto = request.POST['foto'], jumlah_komentar = 0, judul_post = request.POST['judul_post'], konten = request.POST['konten'], waktu_publikasi = date.today())
+    new_content.save()
+    return HttpResponse('Thankyou, your story has been submitted! :D')
