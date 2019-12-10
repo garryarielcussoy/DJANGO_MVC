@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body class="home">
+    <header>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-3">Alpha Tech Academy</div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>Blog</li>
+                            <li>Mentor</li>
+                            <li>Mentee</li>
+                            <li>Author</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="description container-fluid">
+        <div class="row">
+            <div class="col-12 alpha-logo">
+                <img src="../../static/img/alpha-logo.png"> 
+            </div>
+            <div class="col-12 big_title">Alpha Tech Academy</div>
+            <div class="col-12 description-div">
+                Alpha Tech Academy is a tech talent incubator that gives everyone (even 
+                <br />non IT background) a chance to be a professional tech talent within 3 
+                <br />months. Contact Person: Email: academy@alphatech.id Mobile phone: 
+                <br />0877 9609 9530
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5 top-left-home">
+                <img class="image-home" src="../../static/img/benefit.png">
+                <img class="image-home" src="../../static/img/search-job.png">
+                <img class="image-home" src="../../static/img/get-paid.png">
+            </div>
+            <div class="col-7 top-right-home">
+                <div class="col-12 benefit-article">
+                <span>Learn awesome tech</span>
+                <br />You will learn about programming language, such as Python and JavaScript, build
+                back-end apps using Flask framework with microservice concept, build client-side
+                apps using React Library, etc
+                </div>
+                <div class="col-12 benefit-article">
+                <span>Land new job</span>
+                <br />If you can pass this awesome program, you will be part of our reliable tech team for 
+                especially Software Engineer position and other tech position such as, Quality Enginner,
+                System Analyst, etc
+                </div>
+                <div class="col-12 benefit-article">
+                <span>Get paid to learn</span>
+                <br />Join for free and earn some money. Yes, you read that right, no registration fee
+                required to enter this program. To make things even better, you will receive pocket money
+                just for participating. Cool, right?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5 bottom-left-home"></div>
+            <div class="col-7 bottom-right-home"></div>
+        </div>
+    </div>
+</body>
+
+</html>
