@@ -173,3 +173,43 @@ header nav ul li .active-page{
 }
 
 /*-------------------- MENTEE -------------------- */
+.mentee .mentee-page{
+    margin: 1% 0 0 0;
+}
+
+.mentee .our-mentee{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 580;
+    margin: 3% 0 3% 0
+}
+
+.mentee .mentee-img{
+    width: 80%;
+    height: 80%;
+}
+
+/*-------------------- MENTOR -------------------- */
+.mentor .mentor-page{
+    margin: 1% 0 0 0;
+}
+
+.mentor .our-mentor{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 580;
+    margin: 3% 0 3% 0
+}
+
+.mentor .mentor-img{
+    width: 80%;
+    height: 80%;
+}
+
+.mentor .img-box{
+    text-align: right;
+}
+
+.mentor h6{
+    font-weight: 600;
+}
