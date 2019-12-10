@@ -1,3 +1,9 @@
+/*-------------------- GENERAL -------------------- */
+*{
+    cursor: default;
+}
+
+/*-------------------- MENU -------------------- */
 header .header{
     padding: 1.4% 0% 0.2% 0%;
     text-align: center;
@@ -30,7 +36,29 @@ header nav ul li{
     padding: 0 0 3% 0;
 }
 
+/*-------------------- FOOTER -------------------- */
+.our-product{
+    background-color: #2ec6ce;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
+    padding: 1% 0;
+    font-family: sans-serif;
+    font-weight: 530;
+}
+
+.contact-person{
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-weight: 520;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    padding: 1% 0;
+}
+
 /*-------------------- HOME -------------------- */
+/*----- Top Part -----*/
 .home{
     font-family: sans-serif;
 }
@@ -41,7 +69,7 @@ header nav ul li{
 
 .home .image-home{
     display: block;
-    padding: 1% 0 5% 0;
+    padding: 1% 0 5% 15%;
 }
 
 .home .benefit-article{
@@ -52,4 +80,46 @@ header nav ul li{
 .home .benefit-article span{
     font-weight: 800;
     font-size: 1.2em;
+}
+
+/*----- Bottom Part -----*/
+.home .mission-home{
+    padding: 0 0 15% 38%;
+}
+
+.home .bottom-home{
+    text-align: left;
+    font-family: sans-serif;
+    margin-top: 5%;
+}
+
+.home .our-mission{
+    margin: 0 0 5% 0;
+    padding-left: 0;
+}
+
+.home .our-mission h4{
+    font-weight: 800;
+}
+
+/*----- What Will You Learn -----*/
+.home .will-learn h4{
+    text-align: center;
+}
+
+.home .learn{
+    margin-bottom: 5%;
+}
+
+.home .img-learn{
+    height: 150px;
+    margin: 10px;
+    border: solid rgba(128, 128, 128, 0.2) 2px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 140px;
+}
+
+.home .img-learn img{
+    display: inline-block;
 }
