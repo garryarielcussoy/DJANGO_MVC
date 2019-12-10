@@ -213,3 +213,12 @@ header nav ul li .active-page{
 .mentor h6{
     font-weight: 600;
 }
+
+/*-------------------- AUTHOR -------------------- */
+.author .author-page{
+    margin: 5% 0 4% 0;
+}
+
+.author .author-img{
+    width: 100%;
+}
