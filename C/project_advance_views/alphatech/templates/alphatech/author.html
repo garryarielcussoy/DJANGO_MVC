@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Author</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body class="author">
+<!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-3">Alpha Tech Academy</div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <nav>
+                        <ul>
+                            <li><a href="../" class="home-tab">Home</a></li>
+                            <li><a href="../blog" class="blog-tab">Blog</a></li>
+                            <li><a href="../mentor" class="mentor-tab">Mentor</a></li>
+                            <li><a href="../mentee" class="mentee-tab">Mentee</a></li>
+                            <li><a href="" class="author-tab active-page">Author</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="description container-fluid">
+        <div class="row">
+            <div class="col-12 alpha-logo">
+                <img src="../../static/img/alpha-logo.png"> 
+            </div>
+            <div class="col-12 big_title">Alpha Tech Academy</div>
+            <div class="col-12 description-div">
+                Alpha Tech Academy is a tech talent incubator that gives everyone (even 
+                <br />non IT background) a chance to be a professional tech talent within 3 
+                <br />months. Contact Person: Email: academy@alphatech.id Mobile phone: 
+                <br />0877 9609 9530
+            </div>
+        </div>
+    </div>
+
+<!-- Author -->
+    <div class="container-fluid">
+        <div class="row author-page">
+            <div class="col-3"></div>
+            <div class="col-6 content-author-field">
+                <img class="author-img" src="../../static/img/author.jpg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <br />
+                            <h4>Garry Ariel</h4>
+                            <br />
+                            <p>
+                                Hello everyone. My name is Garry Ariel. I am a math enthusiast. I enjoy coding and solving math problems :D
+                            </p>
+                            <br/>
+                            <p>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Malang</p>
+                            <p>Telephone&nbsp;&nbsp;&nbsp;: 089514845202</p>
+                            <p>Education&nbsp;&nbsp;&nbsp;&nbsp;: Bachelor of Science</p>
+                            <p>Profession&nbsp;&nbsp;&nbsp;: Software Engineer</p>
+                            <p>Nationality&nbsp;&nbsp;: Indonesia</p>
+                            <p>Company&nbsp;&nbsp;&nbsp;&nbsp;: Alterra</p>
+                            <p>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: garry@alterra.id</p>
+                            <br />
+                            <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.314233480313!2d112.60827644979209!3d-7.966441481577961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0xa77fa961a7c4e4b7!2sSepulsa%20Lodge%20Malang!5e0!3m2!1sen!2sid!4v1575972119793!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <div class="container-fluid">
+        <div class="footer row">
+            <div class="col-12 our-product">Our product:
+                <img src="{% static 'img/logo-grey-alphapay.png' %}">
+                <img src="{% static 'img/logo-grey-sepulsa.png' %}">
+                <img src="{% static 'img/logo-grey-alphabill.png' %}">
+            </div>
+            <div class="col-12 contact-person">
+            Contact Person: Mobile phone: 0877 9609 9530. Email: academy@alphatech.id        
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

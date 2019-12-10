@@ -24,4 +24,3 @@ class Mentor(models.Model):
     pengalaman = models.TextField(default="")
 
     def __str__(self):
-        return self.nama_lengkap

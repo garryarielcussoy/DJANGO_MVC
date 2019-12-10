@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Mentee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body class="mentee">
+<!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-3">Alpha Tech Academy</div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <nav>
+                        <ul>
+                            <li><a href="../" class="home-tab">Home</a></li>
+                            <li><a href="../blog" class="blog-tab">Blog</a></li>
+                            <li><a href="../mentor" class="mentor-tab">Mentor</a></li>
+                            <li><a href="" class="mentee-tab active-page">Mentee</a></li>
+                            <li><a href="../author" class="author-tab">Author</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="description container-fluid">
+        <div class="row">
+            <div class="col-12 alpha-logo">
+                <img src="../../static/img/alpha-logo.png"> 
+            </div>
+            <div class="col-12 big_title">Alpha Tech Academy</div>
+            <div class="col-12 description-div">
+                Alpha Tech Academy is a tech talent incubator that gives everyone (even 
+                <br />non IT background) a chance to be a professional tech talent within 3 
+                <br />months. Contact Person: Email: academy@alphatech.id Mobile phone: 
+                <br />0877 9609 9530
+            </div>
+        </div>
+    </div>
+
+<!-- Mentee -->
+    <div class="container-fluid">
+        <div class="row mentee-page">
+            <div class="col-12 our-mentee">Our Mentee</div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <img class="mentee-img" src="../../static/img/jobs.png">
+            </div>
+            <div class="col-4">
+                <h4>Steve Jobs</h4>
+                "I learn so much from Alpha Tech."
+            </div>
+            <div class="col-2"></div>
+
+            <div class="col-2"></div>
+            <div class="col-4">
+                <img class="mentee-img" src="../../static/img/page.png">
+            </div>
+            <div class="col-4">
+                <h4>Larry Page</h4>
+                "Great place to learn about programming"
+            </div>
+            <div class="col-2"></div>
+
+            <div class="col-2"></div>
+            <div class="col-4">
+                <img class="mentee-img" src="../../static/img/mark.png">
+            </div>
+            <div class="col-5">
+                <h4>Mark Zukckerburg</h4>
+                "The best place for who want to be a great IT talent."
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <div class="container-fluid">
+        <div class="footer row">
+            <div class="col-12 our-product">Our product:
+                <img src="{% static 'img/logo-grey-alphapay.png' %}">
+                <img src="{% static 'img/logo-grey-sepulsa.png' %}">
+                <img src="{% static 'img/logo-grey-alphabill.png' %}">
+            </div>
+            <div class="col-12 contact-person">
+            Contact Person: Mobile phone: 0877 9609 9530. Email: academy@alphatech.id        
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
